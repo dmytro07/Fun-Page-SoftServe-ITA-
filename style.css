@@ -85,7 +85,7 @@ nav {
 
 .main-photo {
   display: block;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   animation-name: glide;
   animation-duration: 1s;
