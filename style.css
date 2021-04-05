@@ -29,7 +29,7 @@ a::before {
   content: '';
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 50%;
   width: 0;
   height: 1px;
@@ -67,6 +67,19 @@ nav {
 
 .logo {
   height: 50px;
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .main-photo {
@@ -140,4 +153,27 @@ footer img {
   transform: translateX(-50%);
   height: 115px;
   width: auto;
+}
+
+.drop-down {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #dc052c;
+  max-width: 100px;
+  left: -10px;
+  padding: 10px;
+  visibility: hidden;
+}
+
+.drop-down li {
+  margin-bottom: 10px;
+}
+
+.menu-match {
+  position: relative;
+}
+
+.menu-match:hover .drop-down {
+  visibility: visible;
 }
