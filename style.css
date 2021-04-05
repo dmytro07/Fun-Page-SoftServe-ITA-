@@ -55,6 +55,7 @@ nav {
   background-color: #dc052c;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 nav {
@@ -86,6 +87,20 @@ nav {
   display: block;
   width: 100vw;
   object-fit: cover;
+  animation-name: glide;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  position: relative;
+}
+
+@keyframes glide {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 h2 {
