@@ -36,6 +36,11 @@ a::before {
   background-color: #fff;
 }
 
+a.active-link::before {
+  left: 0;
+  width: 100%;
+}
+
 a:hover::before {
   transition: 0.5s;
   left: 0;
@@ -114,6 +119,7 @@ h3 {
 
 p {
   padding: 0 50px;
+  line-height: 1.5em;
 }
 
 h3 {
